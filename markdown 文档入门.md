@@ -1,5 +1,3 @@
-[TOC]
-
 ![Anime](https://github.com/wangqicc/picture/blob/master/Anime/1.jpg)
 
 # markdown 入门
@@ -99,4 +97,5 @@
 > :stuck_out_tongue_winking_eye:stuck_out_tongue_winking_eye 调皮
 >
 > :unamused:unamused 一脸不快
-
+>
+> :octocat:octocat 章鱼猫
