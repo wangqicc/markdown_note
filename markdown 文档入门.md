@@ -1,6 +1,6 @@
 [TOC]
 
-![这是一个图片](C:\Users\wangqi\Desktop\有待整理和使用的文档\723061.jpg)
+![Anime](https://github.com/wangqicc/picture/blob/master/Anime/1.jpg)
 
 # markdown 入门
 
