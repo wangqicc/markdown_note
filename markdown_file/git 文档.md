@@ -46,10 +46,10 @@
 
 > 工作区(workspace) -> 暂存区(index/stage) -> Git 仓库(本地仓库 repository) -> 远程仓库(remote)
 
-1. **工作区**：添加、编辑、修改文件等动作
-2. **暂存区**：暂存已经修改的文件最后统一提交到 Git 仓库中
-3. **Git 仓库**：最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见
-4. **远程仓库**：提交到 github 中
+1. **工作区**：添加、编辑、修改文件等动作（init）
+2. **暂存区**：暂存已经修改的文件最后统一提交到 Git 仓库中（add）
+3. **Git 仓库**：最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见（commit）
+4. **远程仓库**：提交到 github 中（push）
 
 ### 六、git 常用命令行
 
@@ -58,8 +58,8 @@
 > eg：git clone git://github.com/schacon/grit.git
 
 2. 检查当前文件状态：`git status`
-
-3. 跟踪新文件：`git add 文件或目录路径`
+3. 对现有的某个项目开始用 Git 管理：`git init`
+4. 跟踪新文件：`git add 文件或目录路径`
 
 > `git add -A` 提交所有变化
 > `git add -u` 提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
@@ -79,6 +79,13 @@
 
 7. 推送数据到远程仓库：`git push origin master`
 
+> **常用命令：**
+>
+> `git init`
+> `git add -A`
+> `git commit -m 'update'`
+> `git push`
+
 ### 七、github 常用技巧
 
 1. 进入仓库页面，按 T 可以搜索项目的文件
@@ -92,3 +99,5 @@
 > 1. git 官方文档：https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E5%8F%96%E5%BE%97%E9%A1%B9%E7%9B%AE%E7%9A%84-Git-%E4%BB%93%E5%BA%93
 
 > 2. git 教程：http://www.runoob.com/git/git-tutorial.html
+
+> 3. solve 'everything up-to-date'：https://stackoverflow.com/questions/2936652/git-push-wont-do-anything-everything-up-to-date
