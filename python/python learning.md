@@ -340,7 +340,76 @@ True
 ['a', 'e', 'g', 'n', 'o', 'r']
 ```
 
+#### 3.7 字典(dict)
 
+> **注意：** 字典是键值对集合
+
+```python
+>>> dict = {'1': 'one', '2': 'two', '3': 'three'}
+# 添加元素
+>>> dict['4'] = 'four'
+>>> dict
+{'1': 'one', '2': 'two', '3': 'three', '4': 'four'}
+# 取出元素 '4'
+>>> dict['4']
+'four'
+# 删除元素 '4'
+>>> del dict['4']
+>>> dict
+{'1': 'one', '2': 'two', '3': 'three'}
+# 返回所有键链表
+>>> list(dict)
+['1', '2', '3']
+# 返回所有键链表排序
+>>> sorted(dict)
+['1', '2', '3']
+# 检查键是否在字典中
+>>> '2' in dict
+True
+>>> '3' not in dict
+False
+```
+
+#### 3.8 循环技巧
+
+> 使用 items() 方法将**字典**中键值对同时取出
+
+```python
+>>> dict = {'1': 'one', '2': 'two', '3': 'three'}
+# 加上 'f' 或 'F' 可以在 {} 之间写可以引用的变量或字面值的 Python 表达式
+>>> for k, v in dict.items():
+...     print(f'{k:3}{v:5}')
+...
+1  one
+2  two
+3  three
+4  four
+```
+
+> **序列**中使用 enumerate() 函数可以将索引位置和对应的值输出
+
+```python
+>>> list = ['one', 'two', 'there']
+>>> for i, item in enumerate(list):
+...     print(i, item)
+...
+0 one
+1 two
+2 there
+```
+
+> 同时遍历**多个序列**时，采用 zip() 函数将其内元素一一匹配
+
+```python
+>>> list1 = [1, 2, 3, 4]
+>>> list2 = ['I', 'II', 'III']
+>>> for l1, l2 in zip(list1, list2):
+...     print(l1, l2)
+...
+1 I
+2 II
+3 III
+```
 
 ### 常用命令
 
