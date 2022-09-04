@@ -411,6 +411,12 @@ False
 3 III
 ```
 
+
+
+### 小技巧
+
+1. 对于一个类来说，要让内部属性不能被外部访问，可以在属性的名称前加上两个下划线`__`，相当于一个私有变量，只有内部可以访问
+
 ### 常用命令
 
 1. `pip list` ：查看所有已安装的库
@@ -421,4 +427,6 @@ False
 
 1. [python 文档（菜鸟教程版）](https://www.runoob.com/manual/pythontutorial3/docs/html/appetite.html)
 2. [python 3 文档（官网）](https://docs.python.org/3/library/index.html)
+
+3. [python yield 使用浅析](https://www.ibm.com/developerworks/cn/opensource/os-cn-python-yield/index.html)
 
